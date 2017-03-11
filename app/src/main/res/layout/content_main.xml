@@ -13,13 +13,35 @@
     tools:context="com.example.joaopfsilva.cvapp.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <ImageView
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_qrcode"
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginBottom="57dp"
+        android:id="@+id/email"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="205dp" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_qrcode"
+        android:id="@+id/imageView5"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
